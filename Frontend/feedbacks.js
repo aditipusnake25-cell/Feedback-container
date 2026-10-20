@@ -1,7 +1,7 @@
 let result = document.getElementById("result")
 async function getFeedback() {
     try {
-        const response = await fetch("http://localhost:3000/api/feedback")
+        const response = await fetch("/api/feedback")
         const allFeedback = await response.json();
         allFeedback.forEach((feedback) => {
             result.innerHTML += `
