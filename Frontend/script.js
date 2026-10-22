@@ -21,7 +21,7 @@ form.addEventListener("submit", async (e) => {
   }
   submit.disabled = true;
   try {
-    const response = await fetch("/api/feedback", {
+    const response = await fetch("https://feedbackerfrontend.vercel.app/api/feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
